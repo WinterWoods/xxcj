@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sz.baseuiframe">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".components.activity.RoundButtonActivity" />
+        <activity android:name=".components.activity.QMUIDialogActivity" />
+        <activity android:name=".components.activity.QMUIFloatLayoutActivity" />
+        <activity android:name=".components.activity.QMUIEmptyViewActivity" />
+        <activity android:name=".components.activity.QMUIProgressBarActivity" />
+        <activity android:name=".components.activity.QMUIBottomSheetActivity" />
+        <activity android:name=".components.activity.QMUIGroupListViewActivity" />
+        <activity android:name=".components.activity.QMUITipDialogActivity" />
+        <activity android:name=".components.activity.QMUIRadiusImageViewActivity" />
+        <activity android:name=".components.activity.QMUIVerticalTextViewActivity" />
+        <activity android:name=".components.activity.QMUIPullRefreshLayoutActivity" />
+        <activity android:name=".components.activity.QMUIPopupActivity" />
+        <activity android:name=".components.activity.QMUISpanTouchFixTextViewActivity" />
+        <activity android:name=".components.activity.QMUILinkTextViewActivity" />
+        <activity android:name=".components.activity.QMUIQQFaceViewActivity" />
+        <activity android:name=".components.activity.QMUISpanActivity" />
+        <activity android:name=".components.activity.QMUICollapsingTopBarLayoutActivity" />
+        <activity android:name=".components.activity.QMUIViewPagerActivity" />
+        <activity android:name=".IDCardActivity" />
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".HeXiaoActivity" />
+        <activity android:name=".PrinterActivity"></activity>
+    </application>
+
+</manifest>
